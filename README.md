@@ -4,13 +4,13 @@ A Mission Planner plugin<br>
 
 ## Installation
 
-- Copy the latest `FenceReplanner.dll` from Releases to your Mission Planner installation directory.
+- Copy the latest `FenceReplanner.dll` from [Releases](https://github.com/yuri-rage/mission-planner-fence-replanner/releases) to your Mission Planner installation directory.
 	- Typically `C:\Program Files (x86)\Mission Planner\plugins\`
 - Restart Mission Planner if it was already open.
 
 ## Usage
 
-- Open Mission Planner's "PLAN" tab and create fences around obstacles/avoid areas if they are not already uplaoded to a connected vehicle.
+- Open Mission Planner's "PLAN" tab and create fences around obstacles/avoid areas if they are not already uploaded to a connected vehicle.
 - Right click on the map, and select "Fence Replanner -> Options"
 	- **Arc Segment Length:** Fence Replanner will convert circular fences to polygons. This is the target distance between waypoints around the converted circle.
 	- **Fence Margin:** The desired margin by which to avoid fences.
@@ -37,7 +37,11 @@ The replanner does three passes through the mission:
 
 As a result of these somewhat independent operations, *<u>rerouted paths may cross fence boundaries.</u>* It is *ALWAYS* up to the user to ensure that created mission(s) do not enter exclusion zones.
 
-### No altitude awareness
+### No altitude awareness:
 <span style="color:red;">**WARNING:**</span> This plugin is not altitude aware, and all waypoint altitudes will be zeroed after clicking "Replan Mission."
 
 The primary use case for this plugin is ArduPilot Rover. Waypoint altitude preservation (and possibly 3D replanning) may be included in a future release.
+
+### Mission commands removed:
+
+The replanner only considers waypoint mission items and removes mission commands (like camera triggers).
