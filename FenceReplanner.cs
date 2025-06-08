@@ -1,18 +1,11 @@
 ﻿using ClipperLib;
-using GMap.NET.WindowsForms;
 using MissionPlanner;
 using MissionPlanner.Controls;
-using MissionPlanner.GCSViews;
 using MissionPlanner.Plugin;
 using MissionPlanner.Utilities;
-using SharpDX;
 using System;
-using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.Diagnostics.Tracing;
-using System.Drawing;
 using System.Linq;
-using System.Security.Policy;
 using System.Windows.Forms;
 using static MAVLink;
 
