@@ -6,6 +6,10 @@ A Mission Planner plugin<br>
 
 - Copy the latest `FenceReplanner.dll` from [Releases](https://github.com/yuri-rage/mission-planner-fence-replanner/releases) to your Mission Planner installation directory.
 	- Typically `C:\Program Files (x86)\Mission Planner\plugins\`
+- Windows may automatically block the unsigned library file. To unblock it, right click the filename in Windows Explorer and select "Properties." Then check "Unblock" and click "Ok."
+
+	![File Properties](windows-unblock.png)
+
 - Restart Mission Planner if it was already open.
 
 ## Usage
