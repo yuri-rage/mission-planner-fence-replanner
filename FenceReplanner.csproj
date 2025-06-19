@@ -104,7 +104,7 @@
   <ItemGroup>
     <Reference Include="GMap.NET.Drawing, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\ExtLibs\GMap.NET.Drawing\bin\Debug\net461\GMap.NET.Drawing.dll</HintPath>
+      <HintPath>..\..\ExtLibs\GMap.NET.Drawing\bin\Release\net461\GMap.NET.Drawing.dll</HintPath>
     </Reference>
     <Reference Include="OpenTK, Version=3.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
       <HintPath>$(SolutionDir)packages\OpenTK.3.1.0\lib\net20\OpenTK.dll</HintPath>

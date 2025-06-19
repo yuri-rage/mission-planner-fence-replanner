@@ -14,7 +14,7 @@ namespace FenceReplanner
     public class FenceReplanner : Plugin
     {
         public override string Name => "Fence Replanner";
-        public override string Version => "v0.1a";
+        public override string Version => "v0.1.2-alpha";
         public override string Author => "Yuri Rage";
 
         private const double CLPR_UTM_SCALE_FACTOR = 1000.0;
@@ -44,7 +44,7 @@ namespace FenceReplanner
             Host.FPMenuMap.Items.Insert(insertIndex, contextMenuItem);
 
             // waypoint/fence grid on FlightPlanner GCS view
-            commands = Host.MainForm.FlightPlanner.Controls.Find("Commands", true).FirstOrDefault() as MyDataGridView;
+            commands = Host.MainForm.FlightPlanner.Commands;
 
             form = new FenceReplannerUI
             {
